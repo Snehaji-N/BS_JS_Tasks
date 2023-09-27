@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script>src="C:\Users\sneha\OneDrive\Desktop\MERN\JavaScript\JS_Task4.js"</script>
+    </head>
+    <body>
+        <button type="button" onclick="mydate()">show date</button>
+        <p id="showdate"></p>
+        <br>
+        <button type="button" onclick="mytime()">show Time</button>
+        <p id="showtime"></p> 
+
+        <script>
+           function mytime()
+           {
+            document.getElementById("showtime").innerHTML = Date();
+           }
+
+           function mydate()
+           {
+            document.getElementById("showdate").innerHTML = Date();
+           }
+           
+           const date = new Date()
+           console.log
+           {
+            new Intl.DateTimeFormat('en-US').format(date)
+           }
+        </script>
+
+    </body>
+</html>

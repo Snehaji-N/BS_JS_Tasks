@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    .center 
+    {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    </style>
+<body>
+<div class="center">
+<img id="myImage" src="https://www.animatedimages.org/data/media/75/animated-train-image-0043.gif" width="300" height="180">
+
+<p style="color:rgb(59, 59, 145); font-size: 30px; font-weight: bold;">Click the following buttons to handle animation</p>
+
+<button style="margin-left:250px; "value="Start" onclick="starts">Start</button>&nbsp;&nbsp;<button value="Stop" onclick="stops">Stop</button>
+</div>
+<script>
+function starts()
+{
+   var image = document.getElementById('myImage');
+   image.src="https://www.animatedimages.org/data/media/75/animated-train-image-0031.gif";
+}
+
+function stops()
+{
+   var image = document.getElementById('myImage');
+   image.src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.animatedimages.org%2Fcat-trains-75.htm&psig=AOvVaw0zz-10YXOlNW3K8J71MyFC&ust=1695576489850000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJi53qqowYEDFQAAAAAdAAAAABAE";
+}
+</script>
+
+</body>
+</html>

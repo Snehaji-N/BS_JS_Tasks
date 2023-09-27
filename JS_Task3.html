@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div style="border:1px solid black; margin-right:1150px;">
+        <form name="myform">
+        <p>&nbsp;&nbsp;1st Number: &nbsp;<input type="number" name="n1"></input></p>
+        <p>&nbsp;&nbsp;2nd Number: <input type="number" name="n2"></input></p>
+        &nbsp;&nbsp;<input type="button" value="Multiply" onclick="mul()"></input> <input type="button" value="Divide" onclick="div()"></input>
+        <p>&nbsp;&nbsp;The Result Is:</p>
+        <p>&nbsp;&nbsp;<input style="border:none;" name="result"></input></p>
+        </div>
+        </form>
+
+        <script type="text/javascript">
+            function mul()
+            {
+                n1=parseInt(myform.n1.value);
+                n2=parseInt(myform.n2.value);
+                result=n1*n2;
+                myform.result.value=result;
+            }
+
+            function div()
+            {
+                n1=parseInt(myform.n1.value);
+                n2=parseInt(myform.n2.value);
+                result=n1/n2;
+                myform.result.value=result;
+            }
+
+        </script>
+    </body>
+</html>

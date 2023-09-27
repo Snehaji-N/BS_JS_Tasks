@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+table,td {
+border:none;
+border-collapse:collapse;
+}
+
+#grad {
+  height: 550px;
+  margin-left:450px;
+  margin-right:450px;
+  background-color: rgb(191, 205, 83); 
+  background-image: linear-gradient(rgb(238, 239, 179), rgb(190, 109, 178));
+}
+
+</style>
+</head>
+<body>
+
+<div id="grad">
+
+<table class="center">
+
+<caption style="margin-bottom:10px; color:blue; font-weight:bold; font-size:28px;">Registration form</caption>
+<br>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">First Name</td>
+<td>&nbsp;&nbsp;<input style="width:400px;" type="text"></td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">Last Name</td>
+<td>&nbsp;&nbsp;<input style="width:400px;" type="text"></td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">Email</td>
+<td>&nbsp;&nbsp;<input style="width:400px;" type="email"></td>
+</tr>
+
+<tr>
+  <td style="font-weight:bold; text-align:right;">Password</td>
+  <td>&nbsp;&nbsp;<input style="width:400px;" type="password"></td>
+  </tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">Re-enter Password</td>
+<td>&nbsp;&nbsp;<input style="width:400px;" type="password"></td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">Gender</td>
+<td>&nbsp;&nbsp;<input type="radio"> <label for="Male">Male</label><br>&nbsp;&nbsp;<input type="radio"> <label for="Female">Female</label></td></td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">Age:</td>
+<td>&nbsp;&nbsp;<input style="width:400px;" type="number"></td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">Phone Number</td>
+<td>&nbsp;&nbsp;<input style="width:400px;" type="number"></td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">Address</td>
+<td>&nbsp;&nbsp;<textarea style="width:400px; height:60px;" type="address"></textarea>
+</td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">State</td>
+<td>&nbsp;&nbsp;<input style="width:400px;" type="text"></td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:right;">Country</td>
+<td>
+    &nbsp;&nbsp;<select name="Country" id="Country">
+    <option value="choose">Choose your country</option>
+    <option value="1">India</option>
+    <option value="2">Japan</option>
+    <option value="3">Korea</option>
+    <option value="3">China</option>
+    <option value="3">Pakistan</option>
+    <option value="3">USA</option>
+    <option value="3">Sri Lanka</option>
+    <option value="3">UK</option>
+    <option value="3">Canada</option>
+    <option value="3">Australia</option>
+  </select>
+</td>
+</tr>
+
+<tr>
+<td style="font-weight:bold; text-align:center;">Languages Known</td>
+<td>&nbsp;
+<input type="checkbox">English</input>
+<input type="checkbox">Kannada</input>
+<input type="checkbox">Hindi</input>
+<input type="checkbox">Telugu</input>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<input type="checkbox">Hereby I declare all the given details are true</input>
+</td>
+
+<tr>
+<td colspan="2">
+<p style="text-align:right;">Log in to <a href="">Ethnus</a>&nbsp;website</p>
+</td>
+
+</table>
+<br>
+
+<button style="margin-left:260px; border-radius:10px; border:1px solid black; color:white; background-color:red;" type="submit" class="register" onclick="myFunction()">REGISTER</button>
+<br>
+<br>
+</div>
+
+<script>
+function myFunction() {
+alert("Registered!");
+}
+</script>
+
+</body>
+</html>
